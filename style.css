@@ -1,0 +1,54 @@
+.modalWrapper {
+  background-color: lightcoral;
+  align-items: center;
+  display: none;
+  gap: 19px;
+  border: 2px solid grey;
+  width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 0 6px ;
+  display: none;
+
+}
+
+.modalWrapper img {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: aliceblue;
+
+
+}
+
+.showModal {
+  display: flex;
+  position: fixed;
+  top: calc(50vh - 150px);
+  left: calc(50vw - 200px); 
+}
+
+.modalBtn{
+  position: relative;
+  z-index: 2;
+}
+
+.overlay {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.35);
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+}
+
+.hiddenOverlay{
+  display: block;
+
+}
